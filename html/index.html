@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/style_footer.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+   
+
+    <script src="../header_script.js"></script>
+
+
+</head>
+
+<body class="content">
+    <div id="header"></div>
+
+    <script>
+        // header laden und einfügen
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <section>
+        <div class="recipe_of_the_day">
+            <img class="recipe_of_the_day_img img_round_border" src="../img/chilli_sven.jpg"
+                alt="Ein Bild von Croissant's">
+            <div class="recipe_of_the_day_text">
+                <div>
+                    <div class="recipe_of_the_day_text_titel">Chili con Carne</div>
+                    <div class="recipe_of_the_day_text_subtext">Das Chili con Carne überzeugt mit seinem würzigen,
+                        herzhaften Geschmack und der perfekten Balance aus Schärfe und Tiefe. Die Kombination aus zartem
+                        Hackfleisch, aromatischen Gewürzen und sättigenden Bohnen macht es zu einem echten Soulfood. Es
+                        ist einfach zuzubereiten, vielseitig abwandelbar und schmeckt am nächsten Tag fast noch besser!
+                    </div>
+                <a href="./rezeptseite_sven.html"></div><button class="button">Rezept öffnen</button>
+                </a>
+                </div>
+        </div>
+    </section>
+    <section id="secondpart">
+        <h1>Lust auf was Neues?</h1>
+        <div class="fourimg">
+            <a href="">
+                <div class="imgtxt">
+                    <img class="image" src="../img/Croquetas.jpg" />
+                    <h2>Croquetas de Jamon</h2>
+                </div>
+            </a>
+            <a href="./rezeptseite_eugen.html">
+                <div class="imgtxt">
+                    <img class="image" src="../img/burger.png" />
+                    <h2>Burger</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="imgtxt">
+                    <img class="image" src="../img/carbonarahappy.jpg" />
+                    <h2>Carbonara</h2>
+                </div>
+            </a>
+            <a href="./rezeptseite_sven.html">
+                <div class="imgtxt">
+                    <img class="image" src="../img\chilli_sven.jpg" />
+                    <h2>Chili con Carne</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="wok">
+        <div class="wok_container">
+            <h1>Pfanne vs. Wok - Was ist besser?</h1>
+            <div class="explanation">
+                <span>Die Entscheidung zwischen Pfanne und Wok hängt von deinen Kochgewohnheiten ab.
+
+                    Die Pfanne: Ein Allrounder für den Alltag, ideal zum Braten, Schmoren oder Anbraten. Mit flachem
+                    Boden und hohen Rändern ist sie perfekt für Steaks, Pfannkuchen oder Gemüse. Praktisch und einfach
+                    zu handhaben.
+
+                    Der Wok: Perfekt für asiatische Gerichte und schnelles Garen bei hohen Temperaturen. Seine runde
+                    Form eignet sich gut für Stir-Fry oder gebratene Nudeln, benötigt aber oft einen Gasherd für
+                    optimale Hitze.
+
+                    Fazit: Die Pfanne ist vielseitig und alltagstauglich, der Wok ideal für asiatische Küche. Am besten
+                    hast du beides!</span>
+                <img src="../img/wok.jpg" alt="Gemüse im Wok">
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+      </script>
+</body>
+
+</html>

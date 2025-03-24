@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Seite Sven</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_sven.css" />
+    
+    <link rel="stylesheet" href="../styles/style_footer.css" />
+    <script src="../header_script.js"></script>
+    
+</head>
+
+<body class="content">
+    <div id="header"></div>
+
+    <script>
+        // header laden und einfügen
+        fetch('./header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+          });
+      </script>
+
+    <section>
+        <div class="my_recipe">
+            <h1 id="test">Chili con Carne</h1>
+            <img class=" my_recipe_atf_img img_round_border" src="../img\chilli_sven.jpg" alt="Ein Bild vom Grichischem Salat">
+            <div class="my_recipe_tag">
+                <div><img src="../img/icons/clock-regular.svg" alt=""> 45 Min</div>
+
+                <div><img src="../img/icons/brain-solid.svg" alt=""> simpel</div>
+
+                <div><img src="../img/icons/calendar-alt-regular.svg" alt=""> 24.03.2025</div>
+            </div>
+
+            <hr>
+
+            <div class="tabel_top">
+                <div>Zutaten für:</div>
+                <input onchange="claculate_ingredient()" type="number" id="Portion_number" min="1" max="30" value="4">
+                <button onclick="claculate_ingredient()" class="button">Portionen</button>
+
+
+            </div>
+            <div id="ingredients_id" class="ingredients">  <!--immer den ganzen div benutzen für eine zutat ausser es ist keine mänge angegeben dann nur ein p element -->
+                <div>
+                    <p id="ingredient_1">500</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Rinderhackfleisch</p>
+                </div>
+                <div>
+                    <p id="ingredient_2">240</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Kidneybohnen </p>
+                </div>
+                <div>
+                    <p id="ingredient_3">140</p>
+                    <p>
+                        g
+                    </p>
+                    <p>Mais </p>
+                </div>
+                <div>
+                    <p id="ingredient_4">1</p>
+                    <p>
+                        
+                    </p>
+                    <p>Zwiebel</p>
+                </div>
+                <div>
+                    <p id="ingredient_5">2 </p>
+                    <p>
+                        
+                    </p>
+                    <p>Knoblauchzehen</p>
+                </div>
+                <div>
+                    <p id="ingredient_6">1 </p>
+                    <p>
+                        
+                    </p>
+
+                    <p>rote Paprika</p>
+                </div>
+                <div>
+                    <p id="ingredient_7">2 </p>
+                    <p>
+                        EL
+                    </p>
+
+                    <p>Tomatenmark</p>
+                </div>
+                <div>
+                    <p id="ingredient_8">400</p>
+                    <p>
+                        g
+                    </p>
+
+                    <p>gehackte Tomaten</p>
+                </div>
+                <div>
+                    <p id="ingredient_9">250 </p>
+                    <p>
+                        ml
+                    </p>
+
+                    <p>Gemüsebrühe</p>
+                </div>
+                <div>
+                    <p id="ingredient_10">1</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>Paprikapulver </p>
+                </div>
+                <div>
+                    <p id="ingredient_11">0.5</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>Kreuzkümmel</p>
+                </div>
+                <div>
+                    <p id="ingredient_12">1</p>
+                    <p>
+                        TL
+                    </p>
+
+                    <p>frische Chili</p>
+                </div>
+                <div>
+                    <p>Salz & Pfeffer</p>
+                </div>
+                <div>
+                    <p>Öl zum Anbraten</p>
+                </div>
+
+            </div>
+            <div class="preparation">
+                <h2>Zubereitung</h2>
+                <div class="my_recipe_tag">
+                    <div>
+                        <img src="../img/icons/clock-regular.svg" alt="">
+                        ca. 15 min.
+                    </div>
+
+                    <div>
+                        <img src="../img/icons/clock-regular.svg" alt="">
+                        gesamtzeit ca 45 Min.
+                    </div>
+                </div>
+                <div class="preparation_text">Zwiebel, Knoblauch und Paprika klein schneiden.  <br><br>
+
+                    1. In einem großen Topf etwas Öl erhitzen. Zwiebeln und Knoblauch glasig dünsten.<br><br>
+                    
+                    2. Das Hackfleisch dazugeben und scharf anbraten, bis es krümelig ist.<br><br>
+                    
+                    3. Paprika und Tomatenmark kurz mitbraten.<br><br>
+                    
+                    4. Gewürze (Paprikapulver, Kreuzkümmel, Chili) hinzufügen und verrühren.<br><br>
+                    
+                    5. Gehackte Tomaten und Brühe dazugießen, gut umrühren.<br><br>
+                    
+                    6. Bei mittlerer Hitze ca. 30 Minuten köcheln lassen.<br><br>
+                    
+                    7. Dann Kidneybohnen und Mais abtropfen und hinzufügen. Nochmals 10 Minuten köcheln lassen.<br><br>
+                    
+                    8. Mit Salz, Pfeffer und ggf. mehr Chili abschmecken. </div>
+
+
+                <div class="creator">Rezept erstellt von </div>
+                <div class="recipe_signature">
+                    <img src="../img/profile.png" alt="">
+                    <div>Sven</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+        // Footer laden und einfügen
+        fetch('./footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+      </script>
+
+
+
+
+</body>
+<script src="../calculator.js"></script>
+
+</html>

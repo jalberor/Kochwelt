@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+    font-family: raleway;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.second_section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin-top: 48px;
+    box-shadow: 0 2px 0 0 rgb(0, 0, 0, 0.2);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+.burger_img {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.grey_iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #E3E3E3;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.third_section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.container_ingredients {
+    width: 80%;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+}
+
+.calculator p {
+    padding-right: 8px;
+}
+
+.inputandbutton {
+    display: flex;
+}
+
+.input {
+    height: 24px;
+    width: 120px;
+    border-width: 1px;
+    border: 1px solid #E3E3E3;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button {
+    height: 28px;
+    width: 120px;
+    background-color: green;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.p_grey {
+    text-align: center;
+    justify-content: center;
+    background-color: #E3E3E3;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+}
+
+.p_grey p {
+    text-align: start;
+    justify-content: center;
+}
+
+.p_grey div {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.p_white {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+}
+
+.p_white p {
+    text-align: start;
+    justify-content: center;
+}
+
+.p_white div {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.fourth_section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.preparation {
+    width: 80%;
+}
+
+.preparation h3 {
+    padding-top: 34px;
+}
+
+.profil_img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profil_container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+@media(max-width: 640px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_ingredients {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator {
+        padding-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .p_grey {
+        grid-template-columns: 50% 50%;
+    }
+
+    .p_white {
+        grid-template-columns: 50% 50%;
+    }
+
+    .preparation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil_container {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media(max-width: 540px) {
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .calculator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator p {
+        padding-right: 0;
+    }
+
+    .p_grey div {
+        padding-right: 12px;
+    }
+
+    .p_white div {
+        padding-right: 12px;
+    }
+}
+
+@media(max-width: 370px) {
+
+    .p_grey {
+        grid-template-columns: 40% 60%;
+    }
+    .p_grey div {
+        padding-right: 6px;
+    }
+    .p_white {
+        grid-template-columns: 40% 60%;
+    }
+    .p_white div {
+        padding-right: 6px;
+    }
+}

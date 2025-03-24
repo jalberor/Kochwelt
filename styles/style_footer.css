@@ -1,0 +1,57 @@
+.footer_container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rth-img {
+  height: 80px;
+  filter: invert(1);
+}
+
+body {
+  margin: 0px;
+}
+
+.kochwelt-img {}
+
+.ser-img {
+  width: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2c2c2c;
+  height: 240px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+
+  .rth-img {
+    display: none;
+  }
+
+  .kochwelt-img {
+    content: url(../img/logo_small.png);
+    filter: invert();
+    width: 48px;
+  }
+
+}
+
+@media (max-width: 400px){
+
+  .social-media {
+    gap: 12px;
+  }
+}

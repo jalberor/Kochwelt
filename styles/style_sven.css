@@ -1,0 +1,317 @@
+/* test */
+
+h1 {
+    padding-top: 80px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 24px;
+}
+
+.impressum {
+
+    width: 80%;
+
+
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.recipe_of_the_day {
+    display: flex;
+    width: 80%;
+    height: 30vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.img_round_border {
+    border-radius: 16px;
+}
+
+.recipe_of_the_day_img img {
+    height: 100%;
+}
+
+.recipe_of_the_day_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+
+.recipe_of_the_day_text_titel {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.recipe_of_the_day_text_subtext {
+    font-weight: 300;
+}
+
+.button {
+    color: white;
+    font-size: 16px;
+    background-color: #008000;
+
+    width: 240px;
+    border: none;
+    padding-block: 0;
+    padding-inline: 0;
+    padding: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.my_recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.my_recipe_atf_img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+
+}
+
+.my_recipe_tag {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+
+}
+
+
+
+.my_recipe_tag * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #EFEFEF;
+    border-radius: 8px;
+    padding: 4px;
+
+
+}
+
+.my_recipe_tag div {
+    margin-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.my_recipe_tag img {
+    width: 12px;
+    padding-right: 8px;
+
+
+}
+
+hr {
+    width: 100%;
+    border-color: #EFEFEF;
+    color: #EFEFEF;
+
+}
+
+.tabel_top {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tabel_top input {
+    font-size: 16px;
+    width: 120px;
+    padding: 11px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    box-sizing: border-box;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tabel_top div {
+    margin-right: 8px;
+}
+
+
+.ingredients {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.ingredients div {
+    display: flex;
+    background-color: #EFEFEF;
+    width: 100%;
+    border-radius: 8px;
+    line-break: anywhere;
+}
+
+.ingredients div:nth-child(even) {
+    background-color: white;
+}
+
+.ingredients p {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4px;
+}
+
+.ingredients var {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4px;
+}
+
+.ingredients p:nth-child(odd) {
+    padding-left: 24px;
+}
+
+.ingredients p:nth-child(3n) {
+    padding-left: 0px;
+}
+
+.preparation_text {
+    margin-bottom: 40px;
+}
+
+.creator {
+    font-size: 16px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 24px;
+
+}
+
+.recipe_signature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 40px;
+}
+
+.recipe_signature img {
+    width: 80px;
+    border-radius: 40px;
+    margin-right: 40px;
+
+}
+
+
+@media (max-width: 900px) {
+
+
+    .recipe_of_the_day {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .recipe_of_the_day_text {
+        text-align: center;
+
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .recipe_of_the_day_text_titel {
+        padding-top: 8px;
+    }
+
+    .recipe_of_the_day_text_subtext {
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .tabel_top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tabel_top button {
+        margin-left: 0;
+    }
+
+    .tabel_top * {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .tabel_top input {
+        width: 240px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .my_recipe_tag {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .my_recipe_tag div {
+        margin-bottom: 16px;
+    }
+
+    .my_recipe_tag div:last-child {
+        margin-bottom: 0;
+    }
+
+    #test {
+        text-align: center;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+
+
+
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Seite Eugen</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="../styles/style_eugen.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style_footer.css" />
+    <link rel="stylesheet" href="../styles/style_header.css" />
+    <link rel="stylesheet" href="../header_script.js" />
+    <script src="../header_script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+
+        <div id="header"></div>
+
+        <script>
+            // header laden und einfügen
+            fetch('./header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+
+        <section class="second_section">
+            <div class="container">
+                <h1>Double Burger</h1>
+                <img class="burger_img" src="../img/burger.png" alt="Doppelter Burger">
+                <div class="info">
+                    <div class="grey_iconbox">
+                        <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
+                        <p>15 Min.</p>
+                    </div>
+                    <div class="grey_iconbox">
+                        <img class="icon" src="../img/icons/brain-solid.svg" alt="Gehirn Icon">
+                        <p>Normal</p>
+                    </div>
+                    <div class="grey_iconbox">
+                        <img class="icon" src="../img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
+                        <p>19.03.2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third_section">
+            <div class="container_ingredients">
+                <div class="calculator">
+                    <p>Zutaten für</p>
+                    <div class="inputandbutton">
+                        <input class="input" type="number" min="0" max="20" placeholder="1">
+                        <button class="button">Portionen</button>
+                    </div>
+                </div>
+                <div class="p_grey">
+                    <div>1 große/s</div>
+                    <p>Bürgerbrötchen</p>
+                </div>
+                <div class="p_white">
+                    <div>200g</div>
+                    <p>Rinderhackfleisch</p>
+                </div>
+                <div class="p_grey">
+                    <div>2 Scheiben</div>
+                    <p>Bacon</p>
+                </div>
+                <div class="p_white">
+                    <div>1 Scheibe/n</div>
+                    <p>Cheddarkäse</p>
+                </div>
+                <div class="p_grey">
+                    <div>1 m.-große</div>
+                    <p>Zwiebel</p>
+                </div>
+                <div class="p_white">
+                    <div>2 Scheiben</div>
+                    <p>Tomaten</p>
+                </div>
+                <div class="p_grey">
+                    <div>2 Blätter</div>
+                    <p>Salat (Lollo Bionda)</p>
+                </div>
+                <div class="p_white">
+                    <div></div>
+                    <p>Meersalz</p>
+                </div>
+                <div class="p_grey">
+                    <div></div>
+                    <p>Schwarzer Pfeffer</p>
+                </div>
+                <div class="p_white">
+                    <div></div>
+                    <p>BBQ-Soße, rauchig</p>
+                </div>
+                <div class="p_grey">
+                    <div></div>
+                    <p>Sonnenblumenöl</p>
+                </div>
+                <div class="p_white">
+                    <div>evtl.</div>
+                    <p>Butterschmalz</p>
+                </div>
+                <div class="p_grey">
+                    <div>evtl</div>
+                    <p>Flüssigrauch</p>
+                </div>
+            </div>
+        </section>
+        <section class="fourth_section">
+            <div class="preparation">
+                <h2>Zubereitung</h2>
+                <div class="info">
+                    <div class="grey_iconbox">
+                        <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
+                        <p>ca. 15 Minuten</p>
+                    </div>
+                    <div class="grey_iconbox">
+                        <img class="icon" src="../img/icons/clock-regular.svg" alt="Uhr Icon">
+                        <p>Gesamtzeit ca. 40 Minuten</p>
+                    </div>
+                </div>
+                <span>Frisches Rinderhackfleisch großzügig mit Salz und Pfeffer würzen, zu zwei Pattys formen (etwas
+                    größer
+                    als gewünscht, da sie sich zusammenziehen) und kurz ins Gefrierfach legen. Bei Pfannenzubereitung
+                    optional etwas Liquid Smoke für rauchigen Geschmack untermischen.
+                    <br>
+                    Die Pattys in der Pfanne in Butterschmalz oder auf dem Grill medium braten. Gegen Ende der Garzeit
+                    Cheddar auflegen, damit er schmilzt. Pattys kurz ruhen lassen. Bacon in der Pfanne oder auf weniger
+                    heißer Zone des Grills braten, dann auf Küchenpapier abtropfen lassen.
+                    <br>
+                    Zwiebel in Ringe schneiden, in heißem Sonnenblumenöl knusprig frittieren, abtropfen und warmhalten.
+                    Tomaten und Salat vorbereiten, Brötchen aufschneiden.
+                    <br>
+                    Burger zusammenbauen: Brötchenunterseite, Lollo Bionda, Bacon, Patty, Cheddar, Barbecue-Sauce,
+                    Tomatenscheiben, Zwiebelringe, zweiter Patty, Cheddar, Barbecue-Sauce, Tomatenscheiben,
+                    Zwiebelringe,
+                    Burger Deckel.
+                    <br><br>
+                    Tipp: Selbst gebackenes Brötchen und hausgemachte Barbecue-Sauce verbessern das Ergebnis
+                </span>
+                <h3>Rezept erstellt von</h3>
+                <div class="profil_container">
+                    <img class="profil_img" src="../img/eugen.jpg" alt="Bild von Eugen">
+                    <p>Eugen</p>
+                </div>
+            </div>
+        </section>
+        <div id="footer"></div>
+
+        <script>
+            // Footer laden und einfügen
+            fetch('./footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
+    </div>
+    </div>
+</body>
+
+</html>
